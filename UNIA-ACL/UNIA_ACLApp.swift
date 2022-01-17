@@ -13,8 +13,8 @@ struct UNIA_ACLApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            NavView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
