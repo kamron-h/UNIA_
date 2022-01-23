@@ -39,35 +39,35 @@ struct NavView: View {
                     LazyVGrid(columns: gridLayout) {
                         
                         NavigationLink(destination: DivisionsView()) {
-                            NavWidget(imageUrl: "garvey", navTitle: "Who Is The UNIA?")
+                            NavWidget(imageUrl: "AL_1", navTitle: "Who Is The UNIA?")
                         }
                         NavigationLink(destination: HistoryView()) {
-                            NavWidget(imageUrl: "AL_1", navTitle: "Our History")
+                            NavWidget(imageUrl: "garvey", navTitle: "Our History")
                         }
                         NavigationLink(destination: NewsView()) {
-                            NavWidget(imageUrl: "unia-acl", navTitle: "UNIA News")
+                            NavWidget(imageUrl: "negroWorld_5", navTitle: "UNIA News")
                         }
                         
                         NavigationLink(destination: DivisionsView()) {
-                            NavWidget(imageUrl: "unia-acl", navTitle: "Meeting Links")
+                            NavWidget(imageUrl: "AL_14", navTitle: "Meetings")
                         }
                         NavigationLink(destination: DivisionsView()) {
                             NavWidget(imageUrl: "unia-acl", navTitle: "Divisions")
                         }
                         NavigationLink(destination: DirectoryView()) {
-                            NavWidget(imageUrl: "unia-acl", navTitle: "Skills/Job Directory")
+                            NavWidget(imageUrl: "negroWorld_3", navTitle: "Skills/Job Directory")
                         }
                         NavigationLink(destination: OrientationView()) {
                             NavWidget(imageUrl: "AL_12", navTitle: "Orientation")
                         }
-                        NavigationLink(destination: DivisionsView()) {
-                            NavWidget(imageUrl: "unia-acl", navTitle: "Skills/Job Directory")
+                        NavigationLink(destination: SecondNavView()) {
+                            NavWidget(imageUrl: "unia-acl", navTitle: "More...")
                         }
-                        
                         
                         
                     }
                 }
+                .background(Image("PanAfricanFlag").aspectRatio(contentMode: .fit))
             })
             .navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)
@@ -95,6 +95,8 @@ struct NavWidget : View {
     ]
     
     let screenSize = UIScreen.main.bounds
+    let screenWidth = UIScreen.main.bounds.width
+    let screenHeight = UIScreen.main.bounds.height
     
     @State var imageUrl = "sdfsdf"
     @State var navTitle = "sdfsdf"
@@ -105,32 +107,33 @@ struct NavWidget : View {
         VStack
         {
             
-            ZStack {
+            VStack {
 //                RoundedRectangle(cornerRadius: 10.0)
                 VStack{
                     Image(imageUrl)
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .blur(radius: 2, opaque: false)
+                        .aspectRatio(contentMode: .fill)
+//                        .blur(radius: 2, opaque: false)
+                        .frame(maxWidth: screenWidth * 0.47, maxHeight: .infinity)
                 }
-                
-                    
+                .clipShape(RoundedRectangle(cornerSize: CGSize.init(width: 8, height: 10)))
+                .shadow(color: .gray.opacity(0.35), radius: 1, x: 3, y: 3)
+                Spacer()
                 Text(navTitle)
                     .multilineTextAlignment(.center)
-                    .font(.custom("Rawkbrush", size: 21))
-                    .offset(y: 43)
-                
+                    .font(.custom("Rawkbrush", size: 15))
+                    .foregroundColor(afrikanGoldColor)
             }
-            .clipShape(RoundedRectangle(cornerSize: CGSize.init(width: 8, height: 10)))
-            .frame(width: width, height: height)
-            .background(garveyGreenColor)
-            .padding(.top)
+            
+//            .frame(width: width, height: height)
+//            .background(garveyGreenColor)
+//            .padding(.top)
         }
         
         
         
-        .padding([.leading, .trailing, .bottom], 8.0)
-        
+        .padding([.leading, .trailing], 3.0)
+        .padding([.bottom], 5.0)
         
     }
 }
