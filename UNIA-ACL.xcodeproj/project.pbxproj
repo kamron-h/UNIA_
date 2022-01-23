@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F40AF31279CF5E300967354 /* SedgwickAve-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F40AF2F279CF5E300967354 /* SedgwickAve-Regular.ttf */; };
+		5F40AF32279CF5E300967354 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F40AF30279CF5E300967354 /* OFL.txt */; };
+		5F40AF36279CFD4900967354 /* SecondNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F40AF35279CFD4900967354 /* SecondNavView.swift */; };
 		5FBC26732794F145002D6627 /* UNIA_ACLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC26722794F145002D6627 /* UNIA_ACLApp.swift */; };
 		5FBC26752794F145002D6627 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC26742794F145002D6627 /* ContentView.swift */; };
 		5FBC26772794F146002D6627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FBC26762794F146002D6627 /* Assets.xcassets */; };
@@ -52,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F40AF2F279CF5E300967354 /* SedgwickAve-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SedgwickAve-Regular.ttf"; sourceTree = "<group>"; };
+		5F40AF30279CF5E300967354 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		5F40AF34279CF65C00967354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5F40AF35279CFD4900967354 /* SecondNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavView.swift; sourceTree = "<group>"; };
 		5FBC266F2794F145002D6627 /* UNIA-ACL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UNIA-ACL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBC26722794F145002D6627 /* UNIA_ACLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNIA_ACLApp.swift; sourceTree = "<group>"; };
 		5FBC26742794F145002D6627 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +104,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F40AF2E279CF5B300967354 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5F40AF2F279CF5E300967354 /* SedgwickAve-Regular.ttf */,
+				5F40AF33279CF60100967354 /* Licenses */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		5F40AF33279CF60100967354 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				5F40AF30279CF5E300967354 /* OFL.txt */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
 		5FBC26662794F144002D6627 = {
 			isa = PBXGroup;
 			children = (
@@ -120,9 +144,12 @@
 		5FBC26712794F145002D6627 /* UNIA-ACL */ = {
 			isa = PBXGroup;
 			children = (
+				5F40AF34279CF65C00967354 /* Info.plist */,
+				5F40AF2E279CF5B300967354 /* fonts */,
 				5FBC26722794F145002D6627 /* UNIA_ACLApp.swift */,
 				5FBC26742794F145002D6627 /* ContentView.swift */,
 				5FBC26A12794F29A002D6627 /* NavView.swift */,
+				5F40AF35279CFD4900967354 /* SecondNavView.swift */,
 				5FBC26A3279502C5002D6627 /* DirectoryView.swift */,
 				5FBC26AF2795033A002D6627 /* DivisionsView.swift */,
 				5FBC26B327950375002D6627 /* NewsView.swift */,
@@ -265,7 +292,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F40AF31279CF5E300967354 /* SedgwickAve-Regular.ttf in Resources */,
 				5FBC267A2794F146002D6627 /* Preview Assets.xcassets in Resources */,
+				5F40AF32279CF5E300967354 /* OFL.txt in Resources */,
 				5FBC26772794F146002D6627 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +330,7 @@
 				5FBC26752794F145002D6627 /* ContentView.swift in Sources */,
 				5FBC26A22794F29A002D6627 /* NavView.swift in Sources */,
 				5FBC26732794F145002D6627 /* UNIA_ACLApp.swift in Sources */,
+				5F40AF36279CFD4900967354 /* SecondNavView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +496,7 @@
 		5FBC26992794F147002D6627 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -474,6 +504,7 @@
 				DEVELOPMENT_TEAM = YUS2V39LA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UNIA-ACL/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -497,7 +528,7 @@
 		5FBC269A2794F147002D6627 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -505,6 +536,7 @@
 				DEVELOPMENT_TEAM = YUS2V39LA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UNIA-ACL/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
