@@ -23,22 +23,22 @@ struct SecondNavView: View {
                 LazyVGrid(columns: gridLayout) {
                     
                     NavigationLink(destination: DivisionsView()) {
-                        NavWidget(imageUrl: "garvey", navTitle: "Pay Your Dues")
+                        NavWidget(imageUrl: "garvey", navTitle: "Pay Your Dues ")
                     }
                     NavigationLink(destination: HistoryView()) {
-                        NavWidget(imageUrl: "AL_1", navTitle: "Fundraisers")
+                        NavWidget(imageUrl: "AL_1", navTitle: "Fundraisers ")
                     }
                     NavigationLink(destination: NewsView()) {
-                        NavWidget(imageUrl: "negroWorld_5", navTitle: "Legislation")
+                        NavWidget(imageUrl: "negroWorld_5", navTitle: "Legislation ")
                     }
                     NavigationLink(destination: DivisionsView()) {
-                        NavWidget(imageUrl: "AL_14", navTitle: "Submit An Idea")
+                        NavWidget(imageUrl: "AL_14", navTitle: "Submit An Idea ")
                     }
                     NavigationLink(destination: DivisionsView()) {
-                        NavWidget(imageUrl: "AL_14", navTitle: "ACL Vote")
+                        NavWidget(imageUrl: "garvey1", navTitle: "ACL Vote ")
                     }
                     NavigationLink(destination: DivisionsView()) {
-                        NavWidget(imageUrl: "unia-acl", navTitle: "Sign In/Out")
+                        NavWidget(imageUrl: "unia-acl", navTitle: "Sign In/Out ")
                     }
                 }
             }
@@ -51,5 +51,6 @@ struct SecondNavView: View {
 struct SecondNavView_Previews: PreviewProvider {
     static var previews: some View {
         SecondNavView()
+            .preferredColorScheme(.dark)
     }
 }
