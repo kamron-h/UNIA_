@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F40AF31279CF5E300967354 /* SedgwickAve-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F40AF2F279CF5E300967354 /* SedgwickAve-Regular.ttf */; };
+		5F2A64B027A30AB800AD352E /* Arima_Madurai in Resources */ = {isa = PBXBuildFile; fileRef = 5F2A64AF27A30AB800AD352E /* Arima_Madurai */; };
+		5F2A64B627A30B1200AD352E /* Caveat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F2A64B527A30B1200AD352E /* Caveat.ttf */; };
+		5F2A64B827A30B2C00AD352E /* Slab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F2A64B727A30B2C00AD352E /* Slab-Regular.ttf */; };
+		5F2A64BA27A3116E00AD352E /* NanumPenScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F2A64B927A3116E00AD352E /* NanumPenScript-Regular.ttf */; };
+		5F40AF31279CF5E300967354 /* Sed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F40AF2F279CF5E300967354 /* Sed-Regular.ttf */; };
 		5F40AF32279CF5E300967354 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F40AF30279CF5E300967354 /* OFL.txt */; };
 		5F40AF36279CFD4900967354 /* SecondNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F40AF35279CFD4900967354 /* SecondNavView.swift */; };
+		5F507F8C27A3520600F2AB61 /* DirectoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F507F8B27A3520600F2AB61 /* DirectoryDetailView.swift */; };
+		5F7240AE27A3B6D800928B3B /* Caveat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F7240AD27A3B6D800928B3B /* Caveat-Bold.ttf */; };
+		5F8435EB27B3A539008CB05D /* MeetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8435EA27B3A539008CB05D /* MeetingsView.swift */; };
 		5FBC26732794F145002D6627 /* UNIA_ACLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC26722794F145002D6627 /* UNIA_ACLApp.swift */; };
 		5FBC26752794F145002D6627 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC26742794F145002D6627 /* ContentView.swift */; };
 		5FBC26772794F146002D6627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FBC26762794F146002D6627 /* Assets.xcassets */; };
@@ -55,10 +62,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F40AF2F279CF5E300967354 /* SedgwickAve-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SedgwickAve-Regular.ttf"; sourceTree = "<group>"; };
+		5F2A64AF27A30AB800AD352E /* Arima_Madurai */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Arima_Madurai; sourceTree = "<group>"; };
+		5F2A64B527A30B1200AD352E /* Caveat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Caveat.ttf; path = Caveat/Caveat.ttf; sourceTree = "<group>"; };
+		5F2A64B727A30B2C00AD352E /* Slab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Slab-Regular.ttf"; path = "Slabo_27px/Slab-Regular.ttf"; sourceTree = "<group>"; };
+		5F2A64B927A3116E00AD352E /* NanumPenScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumPenScript-Regular.ttf"; sourceTree = "<group>"; };
+		5F40AF2F279CF5E300967354 /* Sed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sed-Regular.ttf"; sourceTree = "<group>"; };
 		5F40AF30279CF5E300967354 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		5F40AF34279CF65C00967354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5F40AF35279CFD4900967354 /* SecondNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavView.swift; sourceTree = "<group>"; };
+		5F507F8B27A3520600F2AB61 /* DirectoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryDetailView.swift; sourceTree = "<group>"; };
+		5F7240AD27A3B6D800928B3B /* Caveat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Caveat-Bold.ttf"; path = "Caveat/static/Caveat-Bold.ttf"; sourceTree = "<group>"; };
+		5F8435EA27B3A539008CB05D /* MeetingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsView.swift; sourceTree = "<group>"; };
 		5FBC266F2794F145002D6627 /* UNIA-ACL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UNIA-ACL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBC26722794F145002D6627 /* UNIA_ACLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNIA_ACLApp.swift; sourceTree = "<group>"; };
 		5FBC26742794F145002D6627 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +91,7 @@
 		5FBC26AB27950329002D6627 /* OrientationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationView.swift; sourceTree = "<group>"; };
 		5FBC26AF2795033A002D6627 /* DivisionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionsView.swift; sourceTree = "<group>"; };
 		5FBC26B327950375002D6627 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		5FBC955027AF350900A65FC6 /* UNIA-ACL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "UNIA-ACL.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +122,12 @@
 		5F40AF2E279CF5B300967354 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				5F40AF2F279CF5E300967354 /* SedgwickAve-Regular.ttf */,
+				5F40AF2F279CF5E300967354 /* Sed-Regular.ttf */,
+				5F2A64B727A30B2C00AD352E /* Slab-Regular.ttf */,
+				5F2A64B527A30B1200AD352E /* Caveat.ttf */,
+				5F7240AD27A3B6D800928B3B /* Caveat-Bold.ttf */,
+				5F2A64B927A3116E00AD352E /* NanumPenScript-Regular.ttf */,
+				5F2A64AF27A30AB800AD352E /* Arima_Madurai */,
 				5F40AF33279CF60100967354 /* Licenses */,
 			);
 			path = fonts;
@@ -119,6 +139,15 @@
 				5F40AF30279CF5E300967354 /* OFL.txt */,
 			);
 			path = Licenses;
+			sourceTree = "<group>";
+		};
+		5F507F8A27A351D300F2AB61 /* Directory */ = {
+			isa = PBXGroup;
+			children = (
+				5FBC26A3279502C5002D6627 /* DirectoryView.swift */,
+				5F507F8B27A3520600F2AB61 /* DirectoryDetailView.swift */,
+			);
+			path = Directory;
 			sourceTree = "<group>";
 		};
 		5FBC26662794F144002D6627 = {
@@ -144,13 +173,15 @@
 		5FBC26712794F145002D6627 /* UNIA-ACL */ = {
 			isa = PBXGroup;
 			children = (
+				5FBC955027AF350900A65FC6 /* UNIA-ACL.entitlements */,
 				5F40AF34279CF65C00967354 /* Info.plist */,
 				5F40AF2E279CF5B300967354 /* fonts */,
 				5FBC26722794F145002D6627 /* UNIA_ACLApp.swift */,
 				5FBC26742794F145002D6627 /* ContentView.swift */,
 				5FBC26A12794F29A002D6627 /* NavView.swift */,
+				5F8435EA27B3A539008CB05D /* MeetingsView.swift */,
 				5F40AF35279CFD4900967354 /* SecondNavView.swift */,
-				5FBC26A3279502C5002D6627 /* DirectoryView.swift */,
+				5F507F8A27A351D300F2AB61 /* Directory */,
 				5FBC26AF2795033A002D6627 /* DivisionsView.swift */,
 				5FBC26B327950375002D6627 /* NewsView.swift */,
 				5FBC26A7279502E8002D6627 /* HistoryView.swift */,
@@ -292,10 +323,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F40AF31279CF5E300967354 /* SedgwickAve-Regular.ttf in Resources */,
+				5F40AF31279CF5E300967354 /* Sed-Regular.ttf in Resources */,
 				5FBC267A2794F146002D6627 /* Preview Assets.xcassets in Resources */,
 				5F40AF32279CF5E300967354 /* OFL.txt in Resources */,
 				5FBC26772794F146002D6627 /* Assets.xcassets in Resources */,
+				5F2A64BA27A3116E00AD352E /* NanumPenScript-Regular.ttf in Resources */,
+				5F2A64B827A30B2C00AD352E /* Slab-Regular.ttf in Resources */,
+				5F2A64B027A30AB800AD352E /* Arima_Madurai in Resources */,
+				5F2A64B627A30B1200AD352E /* Caveat.ttf in Resources */,
+				5F7240AE27A3B6D800928B3B /* Caveat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +360,7 @@
 				5FBC26A8279502E8002D6627 /* HistoryView.swift in Sources */,
 				5FBC26A4279502C5002D6627 /* DirectoryView.swift in Sources */,
 				5FBC26B427950375002D6627 /* NewsView.swift in Sources */,
+				5F8435EB27B3A539008CB05D /* MeetingsView.swift in Sources */,
 				5FBC26B02795033A002D6627 /* DivisionsView.swift in Sources */,
 				5FBC267C2794F146002D6627 /* Persistence.swift in Sources */,
 				5FBC267F2794F146002D6627 /* UNIA_ACL.xcdatamodeld in Sources */,
@@ -331,6 +368,7 @@
 				5FBC26A22794F29A002D6627 /* NavView.swift in Sources */,
 				5FBC26732794F145002D6627 /* UNIA_ACLApp.swift in Sources */,
 				5F40AF36279CFD4900967354 /* SecondNavView.swift in Sources */,
+				5F507F8C27A3520600F2AB61 /* DirectoryDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -483,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -498,8 +536,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "UNIA-ACL/UNIA-ACL.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"UNIA-ACL/Preview Content\"";
 				DEVELOPMENT_TEAM = YUS2V39LA7;
 				ENABLE_PREVIEWS = YES;
@@ -511,12 +550,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KamronTHopkins.UNIA-ACL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -530,8 +569,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "UNIA-ACL/UNIA-ACL.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"UNIA-ACL/Preview Content\"";
 				DEVELOPMENT_TEAM = YUS2V39LA7;
 				ENABLE_PREVIEWS = YES;
@@ -543,12 +583,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KamronTHopkins.UNIA-ACL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
