@@ -13,6 +13,7 @@ struct NavView: View {
     let garveyGreenColor = Color(UIColor(displayP3Red: 0.0, green: 0.4, blue: 0.10, alpha: 1))
     let bloodredColor = Color(UIColor(displayP3Red: 0.70, green: 0.0, blue: 0.12, alpha: 1))
     let darkMoonGrayColor = Color(UIColor(displayP3Red: 0.17, green: 0.17, blue: 0.17, alpha: 1))
+    let garveyPeachColor = Color(red: 221, green: 221, blue: 146)
     
     let gridLayout = [
         GridItem(.flexible()),
@@ -37,37 +38,33 @@ struct NavView: View {
                 ScrollView {
                     
                     LazyVGrid(columns: gridLayout) {
-                        
-                        NavigationLink(destination: DivisionsView()) {
-                            NavWidget(imageUrl: "AL_1", navTitle: "Who Is The UNIA?")
-                        }
                         NavigationLink(destination: HistoryView()) {
-                            NavWidget(imageUrl: "garvey", navTitle: "Our History")
+                            NavWidget(imageUrl: "garvey2", navTitle: "Our History ", shadow: Color.gray)
                         }
                         NavigationLink(destination: NewsView()) {
-                            NavWidget(imageUrl: "negroWorld_5", navTitle: "UNIA News")
+                            NavWidget(imageUrl: "negroWorld_5", navTitle: "U.N.I.A. News ", shadow: Color.gray)
                         }
-                        
-                        NavigationLink(destination: DivisionsView()) {
-                            NavWidget(imageUrl: "AL_14", navTitle: "Meetings")
+                        NavigationLink(destination: MeetingsView ()) {
+                            NavWidget(imageUrl: "106-BC", navTitle: "Meetings ", shadow: Color.clear)
                         }
                         NavigationLink(destination: DivisionsView()) {
-                            NavWidget(imageUrl: "unia-acl", navTitle: "Divisions")
+                            NavWidget(imageUrl: "unia-acl", navTitle: "Divisions ", shadow: Color.gray)
                         }
                         NavigationLink(destination: DirectoryView()) {
-                            NavWidget(imageUrl: "negroWorld_3", navTitle: "Skills/Job Directory")
+                            NavWidget(imageUrl: "negroWorld_3", navTitle: "Skills/Job Directory ", shadow: Color.gray)
                         }
                         NavigationLink(destination: OrientationView()) {
-                            NavWidget(imageUrl: "AL_12", navTitle: "Orientation")
+                            NavWidget(imageUrl: "AL_12", navTitle: "Orientation ", shadow: Color.gray)
                         }
-                        NavigationLink(destination: SecondNavView()) {
-                            NavWidget(imageUrl: "unia-acl", navTitle: "More...")
-                        }
-                        
-                        
                     }
+                    VStack(alignment: .center) {
+                        NavigationLink(destination: SecondNavView()) {
+                            NavWidget(imageUrl: "unia-acl", navTitle: "More... ", shadow: Color.gray)
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .center)
                 }
-                .background(Image("PanAfricanFlag").aspectRatio(contentMode: .fit))
+//                .background(Image("PanAfricanFlag").aspectRatio(contentMode: .fit))
             })
             .navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)
@@ -100,6 +97,7 @@ struct NavWidget : View {
     
     @State var imageUrl = "sdfsdf"
     @State var navTitle = "sdfsdf"
+    @State var shadow = Color.gray
     
     
     var body: some View {
@@ -114,14 +112,15 @@ struct NavWidget : View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
 //                        .blur(radius: 2, opaque: false)
-                        .frame(maxWidth: screenWidth * 0.47, maxHeight: .infinity)
+                        .frame(maxWidth: screenWidth * 0.47, maxHeight: screenWidth * 0.47)
                 }
                 .clipShape(RoundedRectangle(cornerSize: CGSize.init(width: 8, height: 10)))
-                .shadow(color: .gray.opacity(0.35), radius: 1, x: 3, y: 3)
+                .shadow(color: shadow.opacity(0.35), radius: 1, x: 3, y: 3)
+                
                 Spacer()
                 Text(navTitle)
                     .multilineTextAlignment(.center)
-                    .font(.custom("Rawkbrush", size: 15))
+                    .font(.custom("Caveat-Bold", size: 26))
                     .foregroundColor(afrikanGoldColor)
             }
             
