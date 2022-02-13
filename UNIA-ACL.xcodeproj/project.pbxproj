@@ -139,6 +139,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F264E5627B89C9E00855EBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FBC26742794F145002D6627 /* ContentView.swift */,
+				5FBC26A12794F29A002D6627 /* NavView.swift */,
+				5F8435EA27B3A539008CB05D /* MeetingsView.swift */,
+				5F40AF35279CFD4900967354 /* SecondNavView.swift */,
+				5F507F8A27A351D300F2AB61 /* Directory */,
+				5FBC26AF2795033A002D6627 /* DivisionsView.swift */,
+				5FBC26B327950375002D6627 /* NewsView.swift */,
+				5FD7BA8C27B893CD00EEC92E /* AppDelegateAdapter.swift */,
+				5FBC26A7279502E8002D6627 /* HistoryView.swift */,
+				5FBC26AB27950329002D6627 /* OrientationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5F40AF2E279CF5B300967354 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,16 +215,7 @@
 				5F40AF34279CF65C00967354 /* Info.plist */,
 				5F40AF2E279CF5B300967354 /* fonts */,
 				5FBC26722794F145002D6627 /* UNIA_ACLApp.swift */,
-				5FBC26742794F145002D6627 /* ContentView.swift */,
-				5FBC26A12794F29A002D6627 /* NavView.swift */,
-				5F8435EA27B3A539008CB05D /* MeetingsView.swift */,
-				5F40AF35279CFD4900967354 /* SecondNavView.swift */,
-				5F507F8A27A351D300F2AB61 /* Directory */,
-				5FBC26AF2795033A002D6627 /* DivisionsView.swift */,
-				5FBC26B327950375002D6627 /* NewsView.swift */,
-				5FD7BA8C27B893CD00EEC92E /* AppDelegateAdapter.swift */,
-				5FBC26A7279502E8002D6627 /* HistoryView.swift */,
-				5FBC26AB27950329002D6627 /* OrientationView.swift */,
+				5F264E5627B89C9E00855EBF /* Views */,
 				5FBC26762794F146002D6627 /* Assets.xcassets */,
 				5FBC267B2794F146002D6627 /* Persistence.swift */,
 				5FBC267D2794F146002D6627 /* UNIA_ACL.xcdatamodeld */,
