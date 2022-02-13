@@ -9,12 +9,13 @@ import SwiftUI
 
 @main
 struct UNIA_ACLApp: App {
-    let persistenceController = PersistenceController.shared
+
+    //Use app delegate adaptor to init required content
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
         WindowGroup {
             NavView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
