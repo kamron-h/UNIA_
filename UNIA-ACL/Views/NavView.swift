@@ -33,48 +33,43 @@ struct NavView: View {
     var body: some View {
         NavigationView {
             
-            VStack(alignment: .center) {
+            ScrollView {
+                Spacer()
                 
-                ScrollView {
-                    Spacer()
-                    
-                    LazyVGrid(columns: gridLayout) {
-                        NavigationLink(destination: HistoryView()) {
-                            NavWidget(imageUrl: "garvey2", navTitle: "Our History ", shadow: Color.gray)
-                                .padding([.leading], 5.0)
-                        }
-                        NavigationLink(destination: NewsView()) {
-                            NavWidget(imageUrl: "negroWorld_5", navTitle: "U.N.I.A. News ", shadow: Color.gray)
-                                .padding([.trailing], 5.3)
-                            
-                        }
-                        NavigationLink(destination: MeetingsView ()) {
-                            NavWidget(imageUrl: "106-BC", navTitle: "Meetings ", shadow: Color.clear)
-                                .padding([.leading], 5.0)
-                        }
-                        NavigationLink(destination: DivisionsView()) {
-                            NavWidget(imageUrl: "unia-acl", navTitle: "Divisions ", shadow: Color.gray)
-                                .padding([.trailing], 5.3)
-                        }
-                        NavigationLink(destination: DirectoryView()) {
-                            NavWidget(imageUrl: "negroWorld_3", navTitle: "Job Directory ", shadow: Color.gray)
-                                .padding([.leading], 5.0)
-                        }
-                        NavigationLink(destination: OrientationView()) {
-                            NavWidget(imageUrl: "AL_12", navTitle: "Orientation ", shadow: Color.gray)
-                                .padding([.trailing], 5.3)
-                        }
+                LazyVGrid(columns: gridLayout) {
+                    NavigationLink(destination: HistoryView()) {
+                        NavWidget(imageUrl: "garvey2", navTitle: "Our History ", shadow: Color.gray)
+                            .padding([.leading], 5.0)
                     }
-                    
-                    VStack(alignment: .center) {
-                        NavigationLink(destination: SecondNavView()) {
-                            NavWidget(imageUrl: "unia-acl", navTitle: "More... ", shadow: Color.gray)
-                        }
+                    NavigationLink(destination: NewsView()) {
+                        NavWidget(imageUrl: "negroWorld_5", navTitle: "U.N.I.A. News ", shadow: Color.gray)
+                            .padding([.trailing], 5.3)
+                        
                     }
-                    .frame(maxWidth: .infinity, alignment: .center)
+                    NavigationLink(destination: MeetingsView ()) {
+                        NavWidget(imageUrl: "106-BC", navTitle: "Meetings ", shadow: Color.clear)
+                            .padding([.leading], 5.0)
+                    }
+                    NavigationLink(destination: DivisionsView()) {
+                        NavWidget(imageUrl: "unia-acl", navTitle: "Divisions ", shadow: Color.gray)
+                            .padding([.trailing], 5.3)
+                    }
+                    NavigationLink(destination: DirectoryView()) {
+                        NavWidget(imageUrl: "negroWorld_3", navTitle: "Job Directory ", shadow: Color.gray)
+                            .padding([.leading], 5.0)
+                    }
+                    NavigationLink(destination: OrientationView()) {
+                        NavWidget(imageUrl: "AL_12", navTitle: "Orientation ", shadow: Color.gray)
+                            .padding([.trailing], 5.3)
+                    }
                 }
                 
-                //                .background(Image("PanAfricanFlag").aspectRatio(contentMode: .fit))
+                VStack(alignment: .center) {
+                    NavigationLink(destination: SecondNavView()) {
+                        NavWidget(imageUrl: "unia-acl", navTitle: "More... ", shadow: Color.gray)
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .center)
             }
             .preferredColorScheme(.dark)
             
