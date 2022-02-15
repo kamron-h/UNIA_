@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0801FD27B8BB36006F800C /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0801FC27B8BB36006F800C /* ViewModels.swift */; };
+		5F0801FF27B8BDC4006F800C /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0801FE27B8BDC4006F800C /* DataTypes.swift */; };
+		5F08020227B8C13D006F800C /* FundraiserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08020127B8C13D006F800C /* FundraiserView.swift */; };
+		5F08020427B8C165006F800C /* FundraiserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08020327B8C165006F800C /* FundraiserDetailView.swift */; };
+		5F08020627B8C17A006F800C /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08020527B8C17A006F800C /* CartView.swift */; };
+		5F08020827B8C187006F800C /* DebitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08020727B8C187006F800C /* DebitView.swift */; };
+		5F08020A27B97C51006F800C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08020927B97C51006F800C /* Extensions.swift */; };
+		5F264E5827B89D3200855EBF /* Sign_InView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F264E5727B89D3200855EBF /* Sign_InView.swift */; };
 		5F2A64B027A30AB800AD352E /* Arima_Madurai in Resources */ = {isa = PBXBuildFile; fileRef = 5F2A64AF27A30AB800AD352E /* Arima_Madurai */; };
 		5F2A64B627A30B1200AD352E /* Caveat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F2A64B527A30B1200AD352E /* Caveat.ttf */; };
 		5F2A64B827A30B2C00AD352E /* Slab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F2A64B727A30B2C00AD352E /* Slab-Regular.ttf */; };
@@ -72,6 +80,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F0801FC27B8BB36006F800C /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
+		5F0801FE27B8BDC4006F800C /* DataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypes.swift; sourceTree = "<group>"; };
+		5F08020127B8C13D006F800C /* FundraiserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserView.swift; sourceTree = "<group>"; };
+		5F08020327B8C165006F800C /* FundraiserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserDetailView.swift; sourceTree = "<group>"; };
+		5F08020527B8C17A006F800C /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		5F08020727B8C187006F800C /* DebitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitView.swift; sourceTree = "<group>"; };
+		5F08020927B97C51006F800C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5F264E5727B89D3200855EBF /* Sign_InView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign_InView.swift; sourceTree = "<group>"; };
 		5F2A64AF27A30AB800AD352E /* Arima_Madurai */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Arima_Madurai; sourceTree = "<group>"; };
 		5F2A64B527A30B1200AD352E /* Caveat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Caveat.ttf; path = Caveat/Caveat.ttf; sourceTree = "<group>"; };
 		5F2A64B727A30B2C00AD352E /* Slab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Slab-Regular.ttf"; path = "Slabo_27px/Slab-Regular.ttf"; sourceTree = "<group>"; };
@@ -139,18 +155,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F08020027B8C10D006F800C /* Fundraisers */ = {
+			isa = PBXGroup;
+			children = (
+				5F08020127B8C13D006F800C /* FundraiserView.swift */,
+				5F08020327B8C165006F800C /* FundraiserDetailView.swift */,
+				5F08020527B8C17A006F800C /* CartView.swift */,
+				5F08020727B8C187006F800C /* DebitView.swift */,
+			);
+			path = Fundraisers;
+			sourceTree = "<group>";
+		};
 		5F264E5627B89C9E00855EBF /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5FBC26742794F145002D6627 /* ContentView.swift */,
+				5F08020027B8C10D006F800C /* Fundraisers */,
 				5FBC26A12794F29A002D6627 /* NavView.swift */,
 				5F8435EA27B3A539008CB05D /* MeetingsView.swift */,
 				5F40AF35279CFD4900967354 /* SecondNavView.swift */,
 				5F507F8A27A351D300F2AB61 /* Directory */,
 				5FBC26AF2795033A002D6627 /* DivisionsView.swift */,
 				5FBC26B327950375002D6627 /* NewsView.swift */,
-				5FD7BA8C27B893CD00EEC92E /* AppDelegateAdapter.swift */,
 				5FBC26A7279502E8002D6627 /* HistoryView.swift */,
+				5F264E5727B89D3200855EBF /* Sign_InView.swift */,
+				5F0801FC27B8BB36006F800C /* ViewModels.swift */,
 				5FBC26AB27950329002D6627 /* OrientationView.swift */,
 			);
 			path = Views;
@@ -217,6 +246,9 @@
 				5FBC26722794F145002D6627 /* UNIA_ACLApp.swift */,
 				5F264E5627B89C9E00855EBF /* Views */,
 				5FBC26762794F146002D6627 /* Assets.xcassets */,
+				5F0801FE27B8BDC4006F800C /* DataTypes.swift */,
+				5F08020927B97C51006F800C /* Extensions.swift */,
+				5FD7BA8C27B893CD00EEC92E /* AppDelegateAdapter.swift */,
 				5FBC267B2794F146002D6627 /* Persistence.swift */,
 				5FBC267D2794F146002D6627 /* UNIA_ACL.xcdatamodeld */,
 				5FBC26782794F146002D6627 /* Preview Content */,
@@ -402,15 +434,23 @@
 			files = (
 				5FBC26AC27950329002D6627 /* OrientationView.swift in Sources */,
 				5FBC26A8279502E8002D6627 /* HistoryView.swift in Sources */,
+				5F08020827B8C187006F800C /* DebitView.swift in Sources */,
 				5FBC26A4279502C5002D6627 /* DirectoryView.swift in Sources */,
+				5F08020427B8C165006F800C /* FundraiserDetailView.swift in Sources */,
 				5FBC26B427950375002D6627 /* NewsView.swift in Sources */,
+				5F0801FF27B8BDC4006F800C /* DataTypes.swift in Sources */,
 				5F8435EB27B3A539008CB05D /* MeetingsView.swift in Sources */,
 				5FBC26B02795033A002D6627 /* DivisionsView.swift in Sources */,
+				5F08020A27B97C51006F800C /* Extensions.swift in Sources */,
 				5FD7BA8D27B893CD00EEC92E /* AppDelegateAdapter.swift in Sources */,
 				5FBC267C2794F146002D6627 /* Persistence.swift in Sources */,
+				5F08020627B8C17A006F800C /* CartView.swift in Sources */,
 				5FBC267F2794F146002D6627 /* UNIA_ACL.xcdatamodeld in Sources */,
 				5FBC26752794F145002D6627 /* ContentView.swift in Sources */,
+				5F0801FD27B8BB36006F800C /* ViewModels.swift in Sources */,
 				5FBC26A22794F29A002D6627 /* NavView.swift in Sources */,
+				5F08020227B8C13D006F800C /* FundraiserView.swift in Sources */,
+				5F264E5827B89D3200855EBF /* Sign_InView.swift in Sources */,
 				5FBC26732794F145002D6627 /* UNIA_ACLApp.swift in Sources */,
 				5F40AF36279CFD4900967354 /* SecondNavView.swift in Sources */,
 				5F507F8C27A3520600F2AB61 /* DirectoryDetailView.swift in Sources */,
