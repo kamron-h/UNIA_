@@ -146,9 +146,16 @@ struct Sign_InView: View {
                 .padding(.horizontal, 13.0)
                 
                 VStack {
+                    
+                    //SEND PASSWORD RESENT BUTTON
                     Button {
                         //action
-                        
+                        Auth.auth().sendPasswordReset(withEmail: email) { error in
+                            // ...
+                            if error != nil {
+                                print(String(describing: error?.localizedDescription))
+                            }
+                        }
                     } label: {
                         Text("Request Password Reset")
                     }
