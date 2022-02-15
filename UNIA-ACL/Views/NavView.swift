@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct NavView: View {
     
@@ -30,33 +31,41 @@ struct NavView: View {
     ]
     
     var body: some View {
-        
-        VStack(alignment: .center) {
+        NavigationView {
             
-            NavigationView(content: {
+            VStack(alignment: .center) {
                 
                 ScrollView {
+                    Spacer()
                     
                     LazyVGrid(columns: gridLayout) {
                         NavigationLink(destination: HistoryView()) {
                             NavWidget(imageUrl: "garvey2", navTitle: "Our History ", shadow: Color.gray)
+                                .padding([.leading], 5.0)
                         }
                         NavigationLink(destination: NewsView()) {
                             NavWidget(imageUrl: "negroWorld_5", navTitle: "U.N.I.A. News ", shadow: Color.gray)
+                                .padding([.trailing], 5.3)
+                            
                         }
                         NavigationLink(destination: MeetingsView ()) {
                             NavWidget(imageUrl: "106-BC", navTitle: "Meetings ", shadow: Color.clear)
+                                .padding([.leading], 5.0)
                         }
                         NavigationLink(destination: DivisionsView()) {
                             NavWidget(imageUrl: "unia-acl", navTitle: "Divisions ", shadow: Color.gray)
+                                .padding([.trailing], 5.3)
                         }
                         NavigationLink(destination: DirectoryView()) {
-                            NavWidget(imageUrl: "negroWorld_3", navTitle: "Skills/Job Directory ", shadow: Color.gray)
+                            NavWidget(imageUrl: "negroWorld_3", navTitle: "Job Directory ", shadow: Color.gray)
+                                .padding([.leading], 5.0)
                         }
                         NavigationLink(destination: OrientationView()) {
                             NavWidget(imageUrl: "AL_12", navTitle: "Orientation ", shadow: Color.gray)
+                                .padding([.trailing], 5.3)
                         }
                     }
+                    
                     VStack(alignment: .center) {
                         NavigationLink(destination: SecondNavView()) {
                             NavWidget(imageUrl: "unia-acl", navTitle: "More... ", shadow: Color.gray)
@@ -64,12 +73,13 @@ struct NavView: View {
                     }
                     .frame(maxWidth: .infinity, alignment: .center)
                 }
-//                .background(Image("PanAfricanFlag").aspectRatio(contentMode: .fit))
-            })
-            .navigationBarBackButtonHidden(true)
-            .navigationBarHidden(true)
+                
+                //                .background(Image("PanAfricanFlag").aspectRatio(contentMode: .fit))
+            }
+            .preferredColorScheme(.dark)
+            
         }
-        .preferredColorScheme(.dark)
+        .navigationBarHidden(true)
     }
 }
 
@@ -112,7 +122,7 @@ struct NavWidget : View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
 //                        .blur(radius: 2, opaque: false)
-                        .frame(maxWidth: screenWidth * 0.47, maxHeight: screenWidth * 0.47)
+                        .frame(width: screenWidth * 0.47, height: screenWidth * 0.47)
                 }
                 .clipShape(RoundedRectangle(cornerSize: CGSize.init(width: 8, height: 10)))
                 .shadow(color: shadow.opacity(0.35), radius: 1, x: 3, y: 3)
@@ -131,7 +141,7 @@ struct NavWidget : View {
         
         
         
-        .padding([.leading, .trailing], 3.0)
+        .padding([.leading, .trailing], 5.0)
         .padding([.bottom], 5.0)
         
     }
