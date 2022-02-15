@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct UNIA_ACLApp: App {
@@ -15,7 +16,13 @@ struct UNIA_ACLApp: App {
 
     var body: some Scene {
         WindowGroup {
-            NavView()
+            //Send to sign-in view if not logged in...
+            if Auth.auth().currentUser == nil {
+                Sign_InView()
+            } else {
+                NavView()
+            }
+            
         }
     }
 }
